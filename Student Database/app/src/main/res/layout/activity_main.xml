@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ajayp.databasedemo.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="show"
+            android:text="display"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="324dp"
+            android:layout_alignBaseline="@+id/button"
+            android:layout_alignBottom="@+id/button"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:onClick="ins"
+            android:text="insert"
+            tools:layout_editor_absoluteX="183dp"
+            tools:layout_editor_absoluteY="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:onClick="delete"
+            android:text="delete"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:id="@+id/na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/button"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/mar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/na"
+            android:layout_alignStart="@+id/na"
+            android:layout_below="@+id/na"
+            android:layout_marginTop="55dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="marks" />
+
+        <EditText
+            android:id="@+id/r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mar"
+            android:layout_alignStart="@+id/mar"
+            android:layout_below="@+id/mar"
+            android:layout_marginTop="54dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="row NO." />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button2"
+            android:layout_alignEnd="@+id/button2"
+            android:layout_alignRight="@+id/button2"
+            android:layout_marginBottom="21dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:onClick="up"
+            android:text="update" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
