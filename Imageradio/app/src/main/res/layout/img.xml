@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/imeButton"
+            android:layout_width="80dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_height="80dp"
+            app:srcCompat="@color/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/imageButn2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            app:srcCompat="@android:color/darker_gray" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            app:srcCompat="@color/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/imageutton2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="3"
+            android:layout_row="0"
+            app:srcCompat="@android:color/darker_gray" />
+
+        <ImageButton
+            android:id="@+id/imeButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            app:srcCompat="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            app:srcCompat="@android:color/holo_blue_bright" />
+
+
+    </GridLayout>
+
+</RelativeLayout>
