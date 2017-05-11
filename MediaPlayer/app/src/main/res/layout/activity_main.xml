@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.ajayp.mediaplayer.MainActivity">
+
+
+    <Button
+        android:id="@+id/pl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="76dp"
+        android:onClick="play"
+        android:text="@string/play" />
+
+    <Button
+        android:id="@+id/pau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pl"
+        android:layout_alignBottom="@+id/pl"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="56dp"
+        android:onClick="pause"
+        android:text="@string/pause" />
+
+    <Button
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pl"
+        android:layout_below="@+id/pau"
+        android:layout_marginTop="50dp"
+        android:onClick="resume"
+        android:text="@string/resume" />
+
+    <Button
+        android:id="@+id/sto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pau"
+        android:layout_alignTop="@+id/res"
+        android:onClick="stop"
+        android:text="@string/stop" />
+
+    <TextView
+        android:id="@+id/tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/track"
+        android:textSize="25dp" />
+</RelativeLayout>
